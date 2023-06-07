@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fennec projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka One', cursive;
+        }
+        body {
+            background-color: #000000;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: #4d4d4d;
+            -webkit-text-stroke: 2px #575757;
+            font-weight: 300;
+            position: relative;
+        }
+
+        h1::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #f38c05;
+            -webkit-text-stroke: 0px #fa8f15;
+            overflow: hidden;
+            animation: loading 5s linear;
+        }
+
+        @keyframes loading{
+            0% {
+                clip-path: polygon(0 100%, 2% 100%, 18% 100%, 36% 100%, 50% 100%, 62% 100%, 75% 100%, 89% 100%, 98% 100%, 100% 100%);
+            }
+
+            10% {
+                clip-path: polygon(0 100%, 0 94%, 13% 96%, 26% 96%, 43% 93%, 57% 92%, 70% 89%, 84% 88%, 100% 92%, 100% 100%);
+            }
+
+            20% {
+                clip-path: polygon(0 100%, 0 92%, 9% 85%, 24% 81%, 42% 83%, 56% 85%, 68% 88%, 81% 88%, 100% 82%, 100% 100%);
+            }
+
+            30% {
+                clip-path: polygon(0 100%, 0 72%, 12% 77%, 26% 81%, 43% 80%, 58% 75%, 73% 71%, 86% 68%, 100% 67%, 100% 100%);
+            }
+
+            50% {
+                clip-path: polygon(0 100%, 0 61%, 13% 55%, 27% 52%, 42% 55%, 57% 61%, 74% 65%, 87% 64%, 100% 58%, 100% 100%);
+            }
+
+            60% {
+                clip-path: polygon(0 100%, 0 37%, 9% 43%, 23% 47%, 41% 46%, 60% 43%, 72% 35%, 85% 31%, 100% 30%, 100% 100%);
+            }
+
+            75% {
+                clip-path: polygon(0 100%, 0 18%, 15% 17%, 29% 18%, 43% 24%, 57% 26%, 73% 23%, 87% 19%, 100% 16%, 100% 100%);
+            }
+
+            80% {
+                clip-path: polygon(0 100%, 0 13%, 13% 15%, 27% 13%, 41% 10%, 56% 6%, 72% 7%, 82% 9%, 100% 16%, 100% 100%);
+            }
+
+            90% {
+                clip-path: polygon(0 100%, 0 0, 13% 5%, 28% 6%, 43% 6%, 54% 7%, 70% 9%, 84% 8%, 100% 5%, 100% 100%);
+            }
+
+            100% {
+                clip-path: polygon(0 100%, 0 0, 9% 0, 26% 0, 41% 0, 52% 0, 67% 0, 82% 0, 100% 0, 100% 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 data-text="FENNEC CORRETORA">FENNEC CORRETORA</h1>
+    </section>
+</body>
+</html>
